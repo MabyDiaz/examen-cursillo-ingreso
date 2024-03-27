@@ -12,7 +12,7 @@ Asegúrate de incluir un mensaje de error si el número de lados es menor o igua
 
 let numeroLados = Math.floor(Math.random() * 20 + 1);
 
-function tipoFiguraGeometrica(numeroLados) {
+function identificarFiguraGeometrica(numeroLados) {
   if (numeroLados < 0) {
     return "Número de lados inválido.";
   } else if (numeroLados == 0) {
@@ -32,5 +32,5 @@ function tipoFiguraGeometrica(numeroLados) {
   }
 }
 
-let tipoFiguraGeometrica = tipoFiguraGeometrica(numeroLados);
+let tipoFiguraGeometrica = identificarFiguraGeometrica(numeroLados);
 console.log(tipoFiguraGeometrica);
