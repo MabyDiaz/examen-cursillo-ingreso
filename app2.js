@@ -5,7 +5,7 @@ Modifica la función tipoFigura para que, además de determinar el tipo de figur
 let numeroLados = Math.floor(Math.random() * 20 + 1);
 
 function tipoFigura(numeroLados) {
-  if (numeroLados < 0) {   
+  if (numeroLados < 0) {
     return "Número de lados inválido."; // Aquí indico que el número de lados menor a cero no es correcto
   } else if (numeroLados == 0) {
     return `La figura geométrica con ${numeroLados} lados es el Círculo.`;
@@ -24,5 +24,5 @@ function tipoFigura(numeroLados) {
   }
 }
 
-let tipoFiguraGeometrica = tipoFiguraGeometrica(numeroLados);
+let tipoFiguraGeometrica = tipoFigura(numeroLados);
 console.log(tipoFiguraGeometrica);
